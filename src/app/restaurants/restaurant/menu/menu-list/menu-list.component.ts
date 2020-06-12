@@ -7,8 +7,10 @@ import { MenuItem } from '../menu-item/menu-item.model';
   styleUrls: ['./menu-list.component.css']
 })
 export class MenuListComponent implements OnInit {
-  public menu_list = [
-    new MenuItem('Ludowy kąsek', 13, 'Bardzo dobry każdy się naje', 'składniki')
+  public menu_list: MenuItem[] = [
+    new MenuItem('Ludowy kąsek', 13, 'Bardzo dobry każdy się naje', 'składniki'),
+    new MenuItem('Ludowy kąsek2', 13, 'Bardzo dobry każdy się naje', 'składniki'),
+    new MenuItem('Ludowy kąsek3', 13, 'Bardzo dobry każdy się naje', 'składniki')
   ];
   constructor() { }
 

@@ -1,14 +1,17 @@
+<hr>
 <p>restaurants works!</p>
 
 <div>
     <ul>
         <!-- index starts with 0 !-->
         <li *ngFor="let res of restaurants" class="menu-item"> 
-            {{ res }} 
+            <img [src]="res.imagePath" style="width: 100px;" class="image-responsive">
+            <p>{{ res.name }}</p> 
+            <p>{{ res.description }}</p>
         </li>
     </ul>
 </div>
 
 <button class="btn btn-primary">Button</button>
 
-<app-restaurant></app-restaurant>
+<hr>

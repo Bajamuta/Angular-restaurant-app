@@ -9,6 +9,7 @@ import { MenuItemComponent } from './restaurants/restaurant/menu/menu-item/menu-
 import { HeaderComponent } from './header/header.component';
 import { RestaurantsListComponent } from './restaurants/restaurants-list/restaurants-list.component';
 import { MenuListComponent } from './restaurants/restaurant/menu/menu-list/menu-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MenuListComponent } from './restaurants/restaurant/menu/menu-list/menu-
     MenuItemComponent,
     HeaderComponent,
     RestaurantsListComponent,
-    MenuListComponent
+    MenuListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule

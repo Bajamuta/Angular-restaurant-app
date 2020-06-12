@@ -6,14 +6,19 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" (click)="onSelect('home')">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" href="#">Restaurants <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class="nav-item">
-                  <a href="#">Link1</a>
-            </li>
+          <a class="nav-link dropdown-toggle" role="button" 
+          data-toggle="dropdown" (click)="onSelect('restaurants')"
+          aria-haspopup="true" aria-expanded="false">
+          Restaurants <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item"><a href="#" (click)="onSelect('Warszawa')">Warszawa</a></li>
+            <!-- <li class="nav-item" *ngFor="let res of restaurants">
+                  <a [href]="{{ res.name }}" (click)="onSelect({{ res.name }})"> {{ res.name }} </a>
+            </li> -->
           </ul>
         </li>
         <li class="nav-item">
